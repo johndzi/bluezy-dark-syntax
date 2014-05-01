@@ -118,12 +118,16 @@
 }
 
 .comment {
-  color: #7C7C7C;
+  color: #404080;
+  font-style: italic;
 }
 
 .entity {
   color: #FFD2A7;
 
+  &.name.function {
+    color: #E0DFDD;
+  }
   &.name.type {
     text-decoration: underline;
     color: #FFFFB6;
@@ -135,19 +139,11 @@
 }
 
 .keyword {
-  color: #96CBFE;
-
-  &.control {
-    color: #96CBFE;
-  }
-
-  &.operator {
-    color: #EDEDED;
-  }
+  color: #A080FF;
 }
 
 .storage {
-  color: #CFCB90;
+  color: #A080FF;
 
   &.modifier {
     color: #96CBFE;
@@ -155,7 +151,7 @@
 }
 
 .constant {
-  color: #99CC99;
+  color: #707090;
 
   &.numeric {
     color: #FF73FD;
@@ -163,7 +159,7 @@
 }
 
 .variable {
-  color: #C6C5FE;
+  color: #008080;
 }
 
 .invalid.deprecated {
@@ -176,8 +172,20 @@
   background-color: rgba(86, 45, 86, 0.75);
 }
 
+.text .meta.embedded.block .punctuation.embedded.section {
+  &.begin {
+    color: #400080;
+  }
+  &.end {
+    color: #400080;
+  }
+}
+
 // String interpolation in Ruby, CoffeeScript, and others
 .source .string {
+  .string-contents {
+    color: #2222FC;
+  }
   .source,
   .meta.embedded.line {
     color: #EDEDED;
@@ -193,14 +201,14 @@
 }
 
 .string {
-  color: #A8FF60;
+  color: #C6C5FE;
 
   .constant {
     color: #00A0A0;
   }
 
   &.regexp {
-    color: #E9C062;
+    color: #A6A5FF;
 
     .constant.character.escape,
     .source.ruby.embedded,
@@ -227,7 +235,7 @@
   color: #FFFFB6;
 
   &.function {
-    color: #DAD085;
+    color: #9695CE;
   }
 
   &.constant {
@@ -260,7 +268,7 @@
   }
 
   &.preprocessor.c .keyword {
-    color: #AFC4DB;
+    color: #C080C0;
   }
 
   &.cast {
@@ -273,7 +281,7 @@
   &.xml-processing,
   &.xml-processing .entity,
   &.xml-processing .string {
-    color: #494949;
+    color: #C080C0;
   }
 
   &.tag,
