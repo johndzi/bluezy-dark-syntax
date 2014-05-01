@@ -1,9 +1,9 @@
 {
-  "name": "atom-dark-syntax",
+  "name": "bluezy-dark-syntax",
   "theme": "syntax",
   "version": "0.15.0",
-  "description": "Default dark theme for syntax",
-  "repository": "https://github.com/atom/atom-dark-syntax",
+  "description": "Dark Atom syntax theme based on atom-dark-syntax",
+  "repository": "https://github.com/johndzi/bluezy-dark-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
